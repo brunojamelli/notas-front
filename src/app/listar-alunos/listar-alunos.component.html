@@ -1,0 +1,19 @@
+<!-- listar-alunos.component.html -->
+<h2>Lista de Alunos</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Matéria</th>
+      <th>Conceito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let aluno of alunos">
+      <td>{{ aluno.nomeAluno }}</td>
+      <td>{{ aluno.nomeMateria }}</td>
+      <td>{{ aluno.conceito }}</td>
+    </tr>
+  </tbody>
+</table>
